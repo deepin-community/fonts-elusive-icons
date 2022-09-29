@@ -1,0 +1,26 @@
+Source: fonts-elusive-icons
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders:
+ Picca Frédéric-Emmanuel <picca@debian.org>,
+Section: fonts
+Priority: optional
+Build-Depends:
+ debhelper (>= 9),
+Standards-Version: 4.3.0
+Vcs-Browser: https://salsa.debian.org/fonts-team/elusive-icons
+Vcs-Git: https://salsa.debian.org/fonts-team/elusive-icons.git
+Homepage: http://elusiveicons.com/
+Rules-Requires-Root: no
+
+Package: fonts-elusive-icons
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Provides:
+ sass-stylesheets-elusive-icons,
+Enhances:
+ sass,
+Description: iconic font and CSS framework
+ Elusive Icons is a full suite of 304 pictographic icons for easy scalable
+ vector graphics on websites, created and maintained by Team Redux.

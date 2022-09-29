@@ -1,0 +1,40 @@
+fonts-elusive-icons (2.0.0-4) unstable; urgency=medium
+
+  * Team upload.
+
+  * Fix paths of installed paths.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Jan 2019 18:33:23 +0100
+
+fonts-elusive-icons (2.0.0-3) unstable; urgency=medium
+
+  * Team upload.
+
+  * Fix register with fontconfig only when sensible -
+    i.e. provide only TrueType font below /usr/share/fonts.
+  * Make SCSS files available to Sass -
+    i.e. install them below /usr/share/sass.
+    Provide package sass-stylesheets-elusive-icons,
+    and enhance sass.
+  * Enable autopkgtest.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Update Vcs-* fields: Packaging moved to Salsa.
+  * Set Rules-Requires-Root: no.
+  * Update copyright info:
+    + Fix upstream name.
+    + Tidy upstream copyright holder.
+  * Strip leading article from short description.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Jan 2019 17:56:14 +0100
+
+fonts-elusive-icons (2.0.0-2) unstable; urgency=medium
+
+  * fix rules thanks to Chris Lamb (closes: #834576)
+
+ -- Picca Frédéric-Emmanuel <picca@debian.org>  Sat, 19 Nov 2016 15:16:40 +0100
+
+fonts-elusive-icons (2.0.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #816290)
+
+ -- Picca Frédéric-Emmanuel <picca@debian.org>  Sun, 28 Feb 2016 20:29:51 +0000

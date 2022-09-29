@@ -1,0 +1,19 @@
+Test-Command: fc-list -q :family="elusiveicons"
+Depends:
+ fontconfig,
+ @,
+
+Test-Command: for f in /usr/share/fonts-elusive-icons/css/*.css; do sassc $f /dev/null; done
+Depends:
+ sassc,
+ @,
+
+Test-Command: echo "@import 'elusive-icons'" | sassc --load-path /usr/share/sass/elusive-icons /dev/null
+Depends:
+ sassc,
+ @,
+
+Test-Command: lessc --strict-imports /usr/share/fonts-elusive-icons/less/elusive-icons.less /dev/null
+Depends:
+ node-less,
+ @,
